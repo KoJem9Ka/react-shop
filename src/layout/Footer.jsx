@@ -7,7 +7,7 @@ const Footer = () => (
     innerClasses={styles.inner}
     outerTag='footer'
   >
-    <span>KoJem9Ka</span>
+    <a href='https://github.com/KoJem9Ka/react-shop' rel='noreferrer' target='_blank'>KoJem9Ka&apos;s Repo</a>
     <span>
       {new Date().getFullYear()}
       {' '}
