@@ -1,0 +1,92 @@
+@import "../styles/colors";
+
+.flexAllocate {
+  font-size       : 3rem;
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+  padding         : 2rem 0;
+}
+
+//Header
+header {
+  color            : #260353;
+  background-color : $purple-lighten-4;
+
+  .logo {
+    font-size   : 1.5em;
+    font-weight : bold;
+  }
+
+  .inner {
+    @extend .flexAllocate;
+  }
+}
+
+//Footer
+footer {
+  color            : $purple-lighten-5;
+  background-color : $purple-darken-4;
+
+  .inner {
+    @extend .flexAllocate;
+  }
+}
+
+//Container
+.container {
+  width     : calc((241 / 380) * 100% + 2400px / 19);
+  max-width : 1536px;
+  margin    : 0 auto;
+}
+
+.h2Style {
+  font-size  : 3rem;
+  text-align : center;
+}
+
+//Popup
+.PopupOuter {
+  position   : fixed;
+  top        : 0;
+  right      : 0;
+  bottom     : 0;
+  left       : 0;
+  display    : flex;
+  overflow-x : auto;
+  overflow-y : auto;
+  padding    : 5rem 0;
+  background : rgba(0, 0, 0, 0.75);
+}
+
+.PopupInner {
+  margin        : auto;
+  padding       : 0 2rem;
+  border-radius : 2rem;
+  background    : white;
+  box-shadow    : 0 0 20rem black;
+
+  > div:first-child {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    //padding         : 1rem;
+    padding         : 2rem 0 2rem 3rem;
+
+    h2 {
+      font-size : 1.5em;
+    }
+  }
+
+  > div:last-child {
+    //background : red;
+    padding : 4rem 2rem;
+  }
+}
+
+//Line
+.Line {
+  margin        : 0;
+  border        : none;
+  border-bottom : .2rem dashed black;
+}

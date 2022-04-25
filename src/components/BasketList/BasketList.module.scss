@@ -1,0 +1,43 @@
+
+.BasketListOuter {
+  font-size : calc(5px + 2vmin);
+}
+
+.BasketListContent {
+  font-size   : 1.2em;
+  line-height : 150%;
+}
+
+.ordersTable {
+  display               : grid;
+  align-items           : center;
+  justify-content       : center;
+  grid-template-columns : 1fr repeat(4, max-content);
+  grid-gap              : 2rem 2rem;
+  //justify-items: center;
+
+  & > div:nth-child(5n+2) {
+    justify-self : right;
+  }W
+
+  & > div:nth-child(5n+3) {
+    justify-self : right;
+  }W
+
+  & > div:nth-child(5n+4) {
+    justify-self : right;
+  }
+}
+
+.Line {
+  margin : 4rem -2rem;
+}
+
+.Summary {
+  font-weight : 600;
+  text-align  : right;
+
+  span {
+    font-weight : normal;
+  }
+}

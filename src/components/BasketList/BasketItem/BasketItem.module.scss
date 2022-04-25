@@ -1,0 +1,50 @@
+@import "src/styles/colors";
+@import "src/styles/index";
+
+.BasketItem {
+  text-align : justify;
+}
+
+.btns {
+  display             : grid;
+  align-items         : center;
+  grid-template-areas : 'u d'
+                        'b d';
+  grid-gap            : 1rem;
+
+  & > * {
+    line-height   : 4rem;
+    width         : 4rem;
+    height        : 4rem;
+    cursor        : pointer;
+    user-select   : none;
+    transition    : color, background, .2s ease;
+    text-align    : center;
+    color         : $deep-purple-darken-4;
+    border-radius : 1rem;
+    background    : $deep-purple-lighten-5;
+
+    &:hover {
+      transform  : scale(1.1);
+      color      : $deep-purple-lighten-5;
+      background : $deep-purple-darken-4;
+    }
+
+    &:active {
+      transform : none;
+    }
+
+  }
+
+  & > div:nth-child(1) {
+    grid-area : u;
+  }
+
+  & > div:nth-child(2) {
+    grid-area : b;
+  }
+
+  & > div:nth-child(3) {
+    grid-area : d;
+  }
+}
